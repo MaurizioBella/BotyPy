@@ -1,0 +1,72 @@
+{
+    "name": "BotyPy - Slack Bot in Python",
+    "description": "**BotyPy** is a Python BOT, based on the slack_bolt, interfacing with the Slack platform in Socket Mode using the Events API.",
+    "keywords": [
+      "python",
+      "redis",
+      "rq",
+      "slack",
+      "bot",
+      "KeyBERT",
+      "google custom search",
+      "machine learning"
+    ],
+  "logo": "https://slack.com/img/product-ui-generator/apps/slackbot.png",
+  "image": "heroku/python",
+  "website": "https://github.com/MaurizioBella/pyslack-bot",
+  "repository": "https://github.com/MaurizioBella/pyslack-bot",
+  "success_url": "/",
+  "env": {
+    "SLACK_APP_TOKEN": {
+        "description": "App-level tokens represent your app across organizations, including installations by all individual users on all workspaces in a given organization. (begins with xapp*)",
+        "value": "",
+        "required": true
+    },
+    "SLACK_BOT_TOKEN": {
+        "description": "Bot tokens represent a bot associated with the app installed in a workspace. Unlike user tokens, they're not tied to a user's identity; they're just tied to your app.(begins with xoxb*)",
+        "value": "",
+        "required": true
+    },
+    "LOGGING_LEVEL": {
+        "description": "Python standard levels and their applicability are described below (in increasing order of severity)",
+        "value": "ERROR",
+        "required": true
+    },
+    "GOOGLE_SEARCH_API_KEY": {
+        "description": "Custom Search JSON API requires the use of an API key. An API key is a way to identify your client to Google.",
+        "value": "",
+        "required": false
+    },
+    "GOOGLE_CSE_ID": {
+        "description": "Google Programmable Search Engine ID, provided by Google that allows web developers to feature specialized information in web searches",
+        "value": "",
+        "required": false
+    }
+
+  },
+  "formation": {
+    "socket": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    "heroku-redis:hobby-dev"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "pytest testing/tests/"
+      }
+    }
+  }
+}
