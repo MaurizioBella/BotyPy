@@ -34,7 +34,7 @@ python socket_client.py #from another terminal
 ```
 4. Start sending a slack message to your bot
 ## 2. Quickstart (heroku)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MaurizioBella/pyslack-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MaurizioBella/BotyPy)
 - Once deployed, open the Heroku [logs](https://devcenter.heroku.com/articles/logging), and you are good to start sending a slack message to your bot.
 - There are 2 [process types](https://devcenter.heroku.com/articles/procfile) defined in the Procfile: worker and socket
 
