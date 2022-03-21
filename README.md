@@ -18,8 +18,8 @@
 ### config file (.env file)
 
 - REDIS_URL= **Required** Redis URL used by Python RQ (e.g. redis://localhost:6379)
-- SLACK_APP_TOKEN= **Required** [App-level tokens](https://api.slack.com/authentication/token-types) represent your app across organizations, including installations by all individual users on all workspaces in a given organization. (begins with xapp*)
-- SLACK_BOT_TOKEN=**Required** [Bot tokens](https://api.slack.com/authentication/token-types) represent a bot associated with the app installed in a workspace. Unlike user tokens, they're not tied to a user's identity; they're just tied to your app.(begins with xoxb*)
+- SLACK_APP_TOKEN= **Required** [App-level tokens](https://api.slack.com/authentication/token-types) represent your app across organizations, including installations by all individual users on all workspaces in a given organization. (begins with xapp*). You can find it in: "Basic Information" > "App-Level Tokens"
+- SLACK_BOT_TOKEN=**Required** [Bot tokens](https://api.slack.com/authentication/token-types) represent a bot associated with the app installed in a workspace. Unlike user tokens, they're not tied to a user's identity; they're just tied to your app.(begins with xoxb*). You can find it in: "OAuth & Permissions" > "OAuth Tokens for Your Workspace"
 - LOGGING_LEVEL= Standard levels and their applicability are described [here](https://docs.python.org/3/howto/logging.html)
 - GOOGLE_SEARCH_API_KEY=Custom Search JSON API requires the use of an API key. An API key is a way to identify your client to Google.
 - GOOGLE_CSE_ID=Google Programmable Search Engine ID, provided by Google that allows web developers to feature specialized information in web searches
