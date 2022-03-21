@@ -13,8 +13,8 @@
     ],
   "logo": "https://slack.com/img/product-ui-generator/apps/slackbot.png",
   "image": "heroku/python",
-  "website": "https://github.com/MaurizioBella/pyslack-bot",
-  "repository": "https://github.com/MaurizioBella/pyslack-bot",
+  "website": "https://github.com/MaurizioBella/BotyPy",
+  "repository": "https://github.com/MaurizioBella/BotyPy",
   "success_url": "/",
   "env": {
     "SLACK_APP_TOKEN": {
